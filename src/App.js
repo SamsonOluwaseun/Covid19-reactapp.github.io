@@ -32,9 +32,13 @@ class App extends React.Component {
     return(
         <div className={style.container}> 
           <img className={style.image} src={corona} alt="COVID"/>
+          
           <Cards data={data}/>
           <Country handleCountryChange={this.handleCountryChange}/>
           <Charts data={data} country = {country}/>
+          <h2> By Oluwaseun Odeyemi</h2>
+          <p>  Development Training <a href="https://www.youtube.com/watch?v=khJlrj3Y6Ls"> link</a></p>
+          <p>  Data Source <a href="https://covid19.mathdro.id/api">API</a> </p>
         </div>
    );
 }
